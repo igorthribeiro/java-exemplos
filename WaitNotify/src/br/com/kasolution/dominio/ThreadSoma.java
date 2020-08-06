@@ -1,8 +1,5 @@
 package br.com.kasolution.dominio;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class ThreadSoma extends Thread {
 
     private long total;
@@ -14,7 +11,7 @@ public class ThreadSoma extends Thread {
                 try {
                     sleep(10);
                     total += i;
-                } catch (InterruptedException ex) {
+                } catch (InterruptedException e) {
                     //ignorar
                 }
             }
