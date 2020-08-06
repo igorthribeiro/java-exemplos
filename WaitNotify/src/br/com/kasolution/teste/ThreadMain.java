@@ -11,7 +11,7 @@ public class ThreadMain {
         synchronized (ts) {
             try {
                 System.out.println("Aguardando a soma acabar.... ");
-                ts.wait();
+                ts.wait(); //até o notify ou até o objeto ts morrer
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
